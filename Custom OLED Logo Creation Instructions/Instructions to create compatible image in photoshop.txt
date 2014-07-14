@@ -1,0 +1,13 @@
+If converting existing document: Image > mode > indexed color > change all to white except for 1 as black
+OR
+If starting a new document: File New > set pixels to 128x 64, BITMAP 1 bit color, background white, square pixels
+
+Dont forget black pixels will end up as white pixels on a white OLED
+
+Export as windows bitmap default settings
+
+Next step is to use the LCD assistant to concvert to C variables with default settings
+
+Open the created file in a simple text editor like notepad(included in windows) or notepad++
+
+Copy just the hex variables into the logo buffer section of the OLED.cpp file in your libraries folder. 
