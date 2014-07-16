@@ -10,4 +10,4 @@ Next step is to use the LCD assistant to concvert to C variables with default se
 
 Open the created file in a simple text editor like notepad(included in windows) or notepad++
 
-Copy just the hex variables into the logo buffer section of the OLED.cpp file in your libraries folder. 
+Copy just the hex variables into the bitmap.h file in your robot remote folder. 
