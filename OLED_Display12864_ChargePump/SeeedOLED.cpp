@@ -29,7 +29,7 @@
 // BasicFont is placed in code memory.
 
 // This font be freely used without any restriction(It is placed in public domain)
-const unsigned char BasicFont[][8] PROGMEM=
+static const unsigned char BasicFont[][8] PROGMEM=
 {
   {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},
   {0x00,0x00,0x5F,0x00,0x00,0x00,0x00,0x00},
@@ -387,7 +387,7 @@ unsigned char SeeedOLED::putFloat(float floatNumber)
   return f;
 }
 
-void SeeedOLED::drawBitmap(unsigned char *bitmaparray,int bytes)
+void SeeedOLED::drawBitmap(const unsigned char *bitmaparray,int bytes)
 {
   char localAddressMode = addressingMode;
   if(addressingMode != HORIZONTAL_MODE)
